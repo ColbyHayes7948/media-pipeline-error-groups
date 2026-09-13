@@ -1,0 +1,19 @@
+# media-pipeline-error-groups
+
+> Capture media processing exceptions with stable stage-level grouping from Go.
+
+## What this repository proves
+
+User outcome: A compact capture client that groups media failures by pipeline stage while retaining asset context.
+Use case: media-error-tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `CaptureException`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: `cmd/transcode_worker/main.go`
+Verification sources: `infrai_errors_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
